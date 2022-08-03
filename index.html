@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Mobile Form</title>
+      <meta name="description" content="MY cool website">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/d39bd552a9.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/default.css">
+      <link rel="stylesheet" href="./css/styles.css">
+      <!-- <link rel="stylesheet" href="./css/responsive.css"> -->
+
+   </head>
+<header>
+   <div class="header"> 
+      <div class="header-top">
+         <div class="header-top-left">
+
+         </div>
+         <div class="header-top-right">
+            <i class="fa-solid fa-square-full header-top-icon"></i>
+            <i class="fa-solid fa-circle header-top-icon"></i>
+            <i class="fa-solid fa-triangle fa-rotate-180 header-top-icon"></i>
+         </div>
+      </div>
+      <div class="header-bottom">
+         <div class="menu-button">
+            <i class="fa-solid fa-bars header-icon"></i>
+         </div>
+         <div class="page-header">
+            
+            <div class="page-name">
+               Contacts
+            </div>
+            <div class="search"> 
+               <i class="fa-solid fa-magnifying-glass header-icon"></i>
+            </div>
+         </div>
+         <div class="more">
+            <i class="fa-solid fa-ellipsis-vertical header-icon"></i>
+         </div>
+      </div>
+   </div>
+</header>
+<div class="form-container">
+   <ul class="fa-ul form-top">
+      <li><span class="fa-li"><i class="fa-solid fa-user list-icon"></i></span>
+         <input type="text" id="name" name="name" placeholder="Name">
+      </li>
+      <li><span class="fa-li"><i class="fa-solid fa-phone list-icon"></i></span>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone">
+         <select id="phone-type" name="type">
+            <option value="" selected disabled>Label</option>
+            <option value="Cell">Cell</option>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+         </select>
+      </li>
+      <li><span class="fa-li"><i class="fa-solid fa-location-dot list-icon"></i></span> 
+         <input type="text" id="address" name="address" placeholder="Address">
+      </li>
+      <li>
+         <input type="text" id="city" name="city" placeholder="City">
+      </li>
+      <li class="split">
+         <select id="state" name="state" placeholder="State">
+            <option value="" disabled selected>State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Guam">Guam</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Northern Marianas Islands">Northern Marianas Islands</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Virgin Islands">Virgin Islands</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+         </select>
+         <input type="number" id="zip-code" name="zip-code" pattern="[0-9]{5}" placeholder="Zip">
+      </li>
+      <li><span class="fa-li"><i class="fa-solid fa-envelope list-icon"></i></span>
+         <input type="email" id="email" name="email" placeholder="Email">
+      </li>
+      <li><span class="fa-li"><i class="fa-solid fa-cake-candles list-icon"></i></span>
+         <input type="date" id="birthday" name="birthday" placeholder="Birthday">
+      </li>
+   </ul>
+</div>
+
+</html>
