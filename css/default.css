@@ -1,6 +1,7 @@
 html{
    max-width: 375px;
    margin: auto;
+   font-family: "Roboto";
 }
 .header {
    display:flex;
@@ -10,9 +11,13 @@ html{
    background-color: rgba(75,1,209,255);
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .header-top-icon {
    color: #d7b7fd;
+   font-size: .5rem;
+   margin-right: 5px;
+   margin-bottom: 5px;
 }
 
 .header-bottom {
@@ -40,6 +45,13 @@ html{
    float:right;
    margin: 10px;
 }
+.fa-bars,
+.fa-ellipsis-vertical {
+   margin: 5px;
+}
+.header-icon {
+   font-size: .75rem;
+}
 .page-name,
 .header-icon {
    color: rgba(255,255,255,255);
@@ -59,12 +71,10 @@ span {
 ul {
    display:flex;
    flex-direction: column;
-   background-color: blue;
    margin:0;
    margin-top: 0.5rem;
 }
 li {
-   background-color: aqua;
    display: flex;
    width: 100%;
    height: 3rem;
@@ -85,7 +95,9 @@ select {
    border-radius: 5px;
    border: 1px rgba(114,114,114,255) solid;
 }
-input::placeholder {
+input::placeholder,
+select,
+.bday {
    padding: 10px;
 }
 #phone-type {
